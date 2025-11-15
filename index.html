@@ -19,7 +19,7 @@
         background-size: 170px;
     }
 
-    /* طبقة تخفيف حتى لا تتداخل الخلفية */
+    /* طبقة تخفيف */
     body::before {
         content: "";
         position: fixed;
@@ -68,10 +68,17 @@
     .icon {
         width: 65px;
         height: 65px;
+        stroke: #494424;
+        fill: none;
+    }
+
+    .icon-filled {
+        width: 65px;
+        height: 65px;
         fill: #494424;
     }
 
-    /* خريطة */
+    /* الخريطة */
     .map-container {
         width: 90%;
         margin: 40px auto;
@@ -112,52 +119,37 @@
     يسعدنا استقبالكم وتقديم أفضل خدمات الراحة والعافية في أجواء مليئة بالرفاهية والهدوء.
 </div>
 
-<!-- الإيقونات SVG -->
+<!-- الإيقونات -->
 <div class="icons">
 
-    <!-- Instagram -->
+    <!-- Instagram (Outline) -->
     <a href="https://www.instagram.com/yashim.spa" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24">
-            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 
-            0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 
-            3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 
-            1.35-3 3-3h10zm-5 3c-2.76 0-5 2.24-5 
-            5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 
-            2c1.65 0 3 1.35 3 3s-1.35 3-3 
-            3-3-1.35-3-3 1.35-3 3-3zm4.5-.25c-.41 
-            0-.75.34-.75.75s.34.75.75.75.75-.34.75-.75-.34-.75-.75-.75z"/>
+        <svg class="icon" viewBox="0 0 24 24" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1"></circle>
         </svg>
     </a>
 
-    <!-- Snapchat -->
+    <!-- Snapchat (Outline FIXED) -->
     <a href="https://snapchat.com/t/R6g5tyFL" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24">
-            <path d="M12 2c2.8 0 5 2.2 5 5v1.4c0 .8.6 1.6 1.4 1.8.9.2 
-            1.6.9 1.6 1.8s-.7 1.6-1.6 1.8c-.8.2-1.4 1-1.4 
-            1.8V17c0 2.8-2.2 5-5 5h-1c-2.8 0-5-2.2-5-5v-1.4c0-.8-.6-1.6-1.4-1.8-.9-.2-1.6-.9-1.6-1.8s.7-1.6 
-            1.6-1.8c.8-.2 1.4-1 1.4-1.8V7c0-2.8 2.2-5 5-5h1z"/>
+        <svg class="icon" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3c2.5 0 4.5 2 4.5 4.5v1.2c0 .7.5 1.4 1.2 1.6.9.3 1.6.9 1.6 1.8s-.7 1.5-1.6 1.8c-.7.2-1.2.9-1.2 1.6v1c0 2.5-2 4.5-4.5 4.5h-.8c-2.5 0-4.5-2-4.5-4.5v-1c0-.7-.5-1.4-1.2-1.6-.9-.3-1.6-.9-1.6-1.8s.7-1.5 1.6-1.8c.7-.2 1.2-.9 1.2-1.6V7.5C6.7 5 8.7 3 11.2 3h.8z"/>
         </svg>
     </a>
 
-    <!-- TikTok -->
+    <!-- TikTok (Outline) -->
     <a href="https://www.tiktok.com/@yashim.spa" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24">
-            <path d="M13 2h3c.2 1.4.7 2.5 1.6 3.4.8.8 1.7 1.3 
-            2.6 1.5V10c-1-.1-2-.4-3-.8-1-.4-1.8-.9-2.5-1.6v8.7c0 
-            2-.7 3.6-2 4.7-1.3 1.1-2.8 1.7-4.7 1.7-1.9 0-3.4-.6-4.6-1.9C2.7 
-            19.7 2 18.1 2 16.2c0-1.9.7-3.5 1.9-4.8C5.1 10.1 6.6 
-            9.5 8.5 9.5c.6 0 1.2.1 1.8.3V13c-.6-.2-1.2-.3-1.8-.3-1 0-1.7.3-2.3 
-            1-.6.6-.9 1.4-.9 2.5s.3 1.9.9 2.5c.6.6 1.3 1 2.3 
-            1 1 0 1.7-.3 2.3-1 .6-.6.9-1.4.9-2.5V2z"/>
+        <svg class="icon" viewBox="0 0 24 24" stroke-width="1.8">
+            <path d="M13 2h3a5 5 0 0 0 5 5v3c-2 0-4-.6-5.5-1.7V17a5 5 0 1 1-5-5c.6 0 1.2.1 1.5.2v-3c-.5-.1-1-.2-1.5-.2a8 8 0 1 0 8 8V2z"/>
         </svg>
     </a>
 
-    <!-- WhatsApp -->
+    <!-- WhatsApp (Outline) -->
     <a href="https://wa.me/966558666115" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24">
+        <svg class="icon" viewBox="0 0 24 24" stroke-width="1.8">
             <path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 
-            10 0 1 0 12 2zm0 18c-1.7 0-3.3-.5-4.7-1.5l-.3-.2-3 
-            .7.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.1-5.4c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.6.1-.2.2-.7.7-.9.8-.2.1-.3.2-.5 
+            10 0 1 0 12 2zm3.5 13.2c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.6.1-.2.2-.7.7-.9.8-.2.1-.3.2-.5 
             0-.2-.1-.9-.3-1.7-.9-.6-.4-1.1-1.2-1.3-1.4-.1-.2 
             0-.3.1-.4.1-.1.2-.3.3-.4.1-.1.1-.2.2-.3.1-.1.1-.2 
             0-.3-.1-.1-.6-1.5-.8-2.1-.2-.6-.5-.5-.7-.5h-.6c-.2 
@@ -167,9 +159,20 @@
         </svg>
     </a>
 
-    <!-- Location -->
+    <!-- Phone (Outline) -->
+    <a href="tel:0558666115">
+        <svg class="icon" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.9v3a2 2 0 0 1-2.2 2c-1.2-.1-2.5-.4-3.8-.9a19.8 
+            19.8 0 0 1-6.6-4.6A19.3 19.3 0 0 1 4.8 10c-.5-1.3-.8-2.6-.9-3.8A2 
+            2 0 0 1 5.9 2h3a2 2 0 0 1 2 1.7c.1.8.3 1.7.6 2.5a2 
+            2 0 0 1-.5 2.1l-1.3 1.3a16 16 0 0 0 6.6 6.6l1.3-1.3a2 
+            2 0 0 1 2.1-.5c.8.3 1.7.5 2.5.6a2 2 0 0 1 1.7 2v3z"/>
+        </svg>
+    </a>
+
+    <!-- Location (Outline) -->
     <a href="https://maps.app.goo.gl/56KDGug2hh4ZfEcH6?g_st=ipc" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24">
+        <svg class="icon" viewBox="0 0 24 24" stroke-width="1.8">
             <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 
             13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 
             9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 
@@ -179,14 +182,11 @@
 
 </div>
 
-<!-- خريطة الموقع -->
+<!-- خريطة -->
 <div class="map-container">
-    <iframe 
-        src="https://www.google.com/maps?q=26.355508,43.955125&hl=ar&z=17&output=embed">
-    </iframe>
+    <iframe src="https://www.google.com/maps?q=26.355508,43.955125&hl=ar&z=17&output=embed"></iframe>
 </div>
 
-<!-- الفوتر -->
 <footer>
     © جميع الحقوق محفوظة يشم سبا | Yashim Spa
 </footer>
