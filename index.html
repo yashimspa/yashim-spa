@@ -2,138 +2,107 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yashim Spa</title>
-<link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #d1ccbb;
+        font-family: sans-serif;
+        text-align: center;
+    }
 
-body{
-    margin:0;
-    padding:0;
-    background:#d1ccbb;
-    font-family: "Tajawal", sans-serif;
-    text-align:center;
-    position:relative;
-    overflow-x:hidden;
-}
+    /* اللوجو */
+    .logo {
+        width: 180px;
+        height: auto;
+        margin: 25px auto 10px auto;
+        display: block;
+        opacity: 0.9;
+    }
 
-.bg-logo{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:url('logo_transparent.png') no-repeat center;
-    background-size:75%;
-    opacity:0.07;
-    z-index:0;
-}
+    /* أيقونات التواصل */
+    .icons {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
 
-.logo{
-    width:180px;
-    margin:40px auto 10px;
-    position:relative;
-    z-index:2;
-}
+    .icons a img {
+        width: 55px;
+        height: 55px;
+        filter: brightness(0) saturate(100%) invert(24%) sepia(10%) saturate(900%) hue-rotate(25deg) brightness(60%);
+    }
 
-.icons{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:28px;
-    margin-top:40px;
-    position:relative;
-    z-index:2;
-}
+    /* خريطة جوجل */
+    .map-container {
+        width: 90%;
+        margin: 40px auto;
+        background: #f5f1df;
+        padding: 15px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+    }
 
-.icons a{
-    font-size:42px;
-    color:#494424;
-    text-decoration:none;
-    transition:0.3s;
-}
+    iframe {
+        width: 100%;
+        height: 350px;
+        border: none;
+        border-radius: 20px;
+    }
 
-.icons a:hover{
-    transform:scale(1.15);
-    opacity:0.8;
-}
-
-.map-container{
-    width:90%;
-    max-width:550px;
-    margin:55px auto;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 0 10px rgba(0,0,0,0.20);
-    position:relative;
-    z-index:2;
-}
-
-.footer{
-    margin:25px 0 40px;
-    color:#494424;
-    font-size:15px;
-    position:relative;
-    z-index:2;
-}
-
-</style>.logo {
-    width: 180px;      /* حجم اللوجو */
-    height: auto;
-    display: block;
-    margin: 30px auto 10px auto; /* توسيط اللوجو */
-    opacity: 0.95;     /* شفافية بسيطة وناعمة */
-}
+    /* الفوتر */
+    footer {
+        margin: 40px 0 20px 0;
+        font-size: 16px;
+        color: #3e3a23;
+    }
+</style>
 
 </head>
-
 <body>
 
-<div class="bg-logo"></div>
+<!-- اللوجو -->
+<img src="logo.png" class="logo" alt="Yashim Spa Logo">
 
-<img src="logo.png" class="logo">
-
-
+<!-- أيقونات التواصل -->
 <div class="icons">
-
-    <a href="https://www.instagram.com/yashim.spa?igsh=MWFsYndlZjBsaW42aw%3D%3D&utm_source=qr" target="_blank">
-        <i class="fab fa-instagram"></i>
+    <a href="https://www.instagram.com/yashim.spa" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
     </a>
 
     <a href="https://snapchat.com/t/R6g5tyFL" target="_blank">
-        <i class="fab fa-snapchat-ghost"></i>
+        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png">
     </a>
 
-    <a href="https://www.tiktok.com/@yashim.spa?_r=1&_t=ZS-91OZSq4k9TM" target="_blank">
-        <i class="fab fa-tiktok"></i>
+    <a href="https://www.tiktok.com/@yashim.spa" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3116/3116490.png">
     </a>
 
     <a href="https://wa.me/966558666115" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
     </a>
 
-    <a href="tel:+966558666115">
-        <i class="fa-solid fa-phone"></i>
+    <a href="tel:0558666115">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
     </a>
-
-    <a href="https://url-shortener.me/9TY3" target="_blank">
-        <i class="fa-solid fa-location-dot"></i>
-    </a>
-
 </div>
 
+<!-- خريطة الموقع -->
 <div class="map-container">
-<iframe 
-src="https://url-shortener.me/9TY3"
-width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
-</iframe>
+    <iframe 
+        src="https://www.google.com/maps?q=26.367311,43.960556&hl=ar&z=16&output=embed">
+    </iframe>
 </div>
 
-<div class="footer">
-© جميع الحقوق محفوظة يشم سبا | Yashim Spa
-</div>
+<!-- فوتر -->
+<footer>
+    © جميع الحقوق محفوظة يشم سبا | Yashim Spa
+</footer>
 
 </body>
 </html>
